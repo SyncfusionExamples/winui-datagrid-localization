@@ -122,59 +122,59 @@
     <comment>AddNewRow water mark text.</comment>
   </data>
   <data name="AND" xml:space="preserve">
-    <value>de AND</value>
+    <value>UND</value>
     <comment>Text for AND FilterPredicate</comment>
   </data>
   <data name="BeginsWith" xml:space="preserve">
-    <value>de Begins With</value>
+    <value>Beginnt mit</value>
     <comment>Text for BeginsWith</comment>
   </data>
   <data name="Blanks" xml:space="preserve">
-    <value>de (Blanks)</value>
+    <value>(Leerzeichen)</value>
     <comment>Text for Blank filters</comment>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>de Cancel</value>
+    <value>Absagen</value>
     <comment>Text for Cancel</comment>
   </data>
   <data name="ClearFilter" xml:space="preserve">
-    <value>de Clear Filter</value>
+    <value>Filter löschen</value>
     <comment>Text for Clear filters</comment>
   </data>
   <data name="ColumnChooserTitle" xml:space="preserve">
-    <value>de Column Chooser</value>
+    <value>Titel der Spaltenauswahl</value>
     <comment>Column Chooser Window Title</comment>
   </data>
   <data name="ColumnChooserWaterMark" xml:space="preserve">
-    <value>de (No Fields Available)</value>
+    <value>Spaltenauswahl-Wasserzeichen</value>
     <comment>Empty Column Chooser Water Mark Text</comment>
   </data>
   <data name="Contains" xml:space="preserve">
-    <value>de Contains</value>
+    <value>Enthält</value>
     <comment>Text for Contains</comment>
   </data>
   <data name="Done" xml:space="preserve">
-    <value>de Done</value>
+    <value>Erledigt</value>
     <comment>Done to close the Popup</comment>
   </data>
   <data name="Empty" xml:space="preserve">
-    <value>de Empty</value>
+    <value>Leer</value>
     <comment>Text for Empty</comment>
   </data>
   <data name="EndsWith" xml:space="preserve">
-    <value>de Ends With</value>
+    <value>Endet mit</value>
     <comment>Text for EndsWith</comment>
   </data>
   <data name="Equalss" xml:space="preserve">
-    <value>de Equals</value>
+    <value>Gleich</value>
     <comment>Text for Equals</comment>
   </data>
   <data name="GreaterThan" xml:space="preserve">
-    <value>de Greater Than</value>
+    <value>Größer als</value>
     <comment>Text for GreaterThan</comment>
   </data>
   <data name="GreaterThanorEqual" xml:space="preserve">
-    <value>de Greater Than or Equal</value>
+    <value>Größer als oder gleich</value>
     <comment>Text for GreaterThanorEqual</comment>
   </data>
   <data name="GroupDropAreaText" xml:space="preserve">
@@ -182,59 +182,59 @@
     <comment>Text for GroupDropArea</comment>
   </data>
   <data name="LessThan" xml:space="preserve">
-    <value>de Less Than</value>
+    <value>Weniger als</value>
     <comment>Text for Less Than</comment>
   </data>
   <data name="LessThanorEqual" xml:space="preserve">
-    <value>de Less Than or Equal</value>
+    <value>Weniger als oder gleich</value>
     <comment>Text for LessThanorEqual</comment>
   </data>
   <data name="Before" xml:space="preserve">
-    <value>de Before</value>
+    <value>Vor</value>
     <comment>Text for Before</comment>
   </data>
   <data name="BeforeOrEqual" xml:space="preserve">
-    <value>de Before Or Equal</value>
+    <value>VorOderGleich</value>
     <comment>Text for BeforeOrEqual</comment>
   </data>
   <data name="After" xml:space="preserve">
-    <value>de After</value>
+    <value>Gemäß</value>
     <comment>Text for After</comment>
   </data>
   <data name="AfterOrEqual" xml:space="preserve">
-    <value>de After Or Equal</value>
+    <value>NachOderGleich</value>
     <comment>Text for AfterOrEqual</comment>
   </data>
   <data name="SortDateAscending" xml:space="preserve">
-    <value>de Sort Oldest to Newest</value>
+    <value>Vom Ältesten zum Neuesten sortieren</value>
     <comment>Text for Sort Ascending</comment>
   </data>
   <data name="SortDateDescending" xml:space="preserve">
-    <value>de Sort Newest to Oldest</value>
+    <value>Vom Neusten zum Ältesten sortieren</value>
     <comment>Text for Sort Descending</comment>
   </data>
   <data name="NoItems" xml:space="preserve">
-    <value>de No Items</value>
+    <value>Keine Gegenstände</value>
     <comment>No Items to Display</comment>
   </data>
   <data name="NoMatches" xml:space="preserve">
-    <value>de No Matches</value>
+    <value>Keine Treffer</value>
     <comment>No Items match </comment>
   </data>
   <data name="NotContains" xml:space="preserve">
-    <value>de Does Not Contain</value>
+    <value>Beinhaltet nicht</value>
     <comment>Text for NotContains</comment>
   </data>
   <data name="NotEmpty" xml:space="preserve">
-    <value>de Not Empty</value>
+    <value>Nicht leer</value>
     <comment>Text for NotEmpty</comment>
   </data>
   <data name="NotEquals" xml:space="preserve">
-    <value>de Does Not Equal</value>
+    <value>Ist nicht gleich</value>
     <comment>Text For NotEquals</comment>
   </data>
   <data name="NotNull" xml:space="preserve">
-    <value>de Not Null</value>
+    <value>Nicht null</value>
     <comment>Text for NotNull</comment>
   </data>
   <data name="Null" xml:space="preserve">
@@ -242,103 +242,103 @@
     <comment>Text for Null</comment>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>de OKAY</value>
+    <value>IN ORDNUNG</value>
     <comment>Text for OK</comment>
   </data>
   <data name="OR" xml:space="preserve">
-    <value>de OR</value>
+    <value>ODER</value>
     <comment>Text for OR FilterPredicate</comment>
   </data>
   <data name="RowErrorMessage" xml:space="preserve">
-    <value>de Row Containing Error</value>
+    <value>Zeile mit Fehler</value>
     <comment>Indicates Error by INotifyDataErrorInfo</comment>
   </data>
   <data name="Search" xml:space="preserve">
-    <value>de Search</value>
+    <value>Suche</value>
     <comment>Search water mark</comment>
   </data>
   <data name="SelectAll" xml:space="preserve">
-    <value>de (Select All)</value>
+    <value>(Wählen Sie Alle)</value>
     <comment>Text for Select All</comment>
   </data>
   <data name="ShowRowsWhere" xml:space="preserve">
-    <value>de Show rows where:</value>
+    <value>Zeilen anzeigen, in denen:</value>
     <comment>Text for ShowRowsWhere</comment>
   </data>
   <data name="SortNumberAscending" xml:space="preserve">
-    <value>de Sort Smallest to Largest</value>
+    <value>Vom Kleinsten zum Größten sortieren</value>
     <comment>Text for Sort Ascending</comment>
   </data>
   <data name="SortNumberDescending" xml:space="preserve">
-    <value>de Sort Largest to Smallest</value>
+    <value>Vom Größten zum Kleinsten sortieren</value>
     <comment>Text for Sort Descending</comment>
   </data>
   <data name="SortStringAscending" xml:space="preserve">
-    <value>de Sort A to Z</value>
+    <value>Sortiere von A bis Z</value>
     <comment>Text for Sort Ascending</comment>
   </data>
   <data name="SortStringDescending" xml:space="preserve">
-    <value>de Sort Z to A</value>
+    <value>Z bis A sortieren</value>
     <comment>Text for Sort Descending</comment>
   </data>
   <data name="EnterValidFilterValue" xml:space="preserve">
-    <value>de Enter Valid Filter Value</value>
+    <value>Geben Sie einen gültigen Filterwert ein</value>
     <comment>Text for EnterValidFilterValue</comment>
   </data>
   <data name="TextFilters" xml:space="preserve">
-    <value>de Text Filters</value>
+    <value>Textfilter</value>
     <comment>Text for TextFilters</comment>
   </data>
   <data name="NumberFilters" xml:space="preserve">
-    <value>de Number Filters</value>
+    <value>Zahlenfilter</value>
     <comment>Text for NumberFilters</comment>
   </data>
   <data name="DateFilters" xml:space="preserve">
-    <value>de Date Filters</value>
+    <value>Datumsfilter</value>
     <comment>Text for DateFilters</comment>
   </data>
   <data name="CantDropHere" xml:space="preserve">
-    <value>de Cannot drop here</value>
+    <value>Kann hier nicht fallen</value>
     <comment>Text for Cannot drop here in RowDragAndDrop popup</comment>
   </data>
   <data name="DropAbove" xml:space="preserve">
-    <value>de Drop above</value>
+    <value>Oben ablegen</value>
     <comment>Text for Drop above in RowDragAndDrop popup</comment>
   </data>
   <data name="DropAsChild" xml:space="preserve">
-    <value>de Drop as child</value>
+    <value>Als Kind fallen lassen</value>
     <comment>Text for Drop as child in RowDragAndDrop popup of TreeGrid</comment>
   </data>
   <data name="DropBelow" xml:space="preserve">
-    <value>de Drop below</value>
+    <value>Unten fallen lassen</value>
     <comment>Text for Drop below in RowDragAndDrop popup</comment>
   </data>
   <data name="DropRowsAbove" xml:space="preserve">
-    <value>de Drop {0} rows above</value>
+    <value>Lassen Sie {0} Zeilen darüber fallen</value>
     <comment>Text for Drop mutiple rows above in RowDragAndDrop popup</comment>
   </data>
   <data name="DropRowsAsChild" xml:space="preserve">
-    <value>de Drop {0} rows as child</value>
+    <value>Lösche {0} Zeilen als Kind</value>
     <comment>Text for Drop mutiple rows as child in RowDragAndDrop popup of TreeGrid</comment>
   </data>
   <data name="DropRowsBelow" xml:space="preserve">
-    <value>de Drop {0} rows below</value>
+    <value>Ziehen Sie {0} Zeilen darunter</value>
     <comment>Text for Drop mutiple rows below in RowDragAndDrop popup</comment>
   </data>
   <data name="DropHere" xml:space="preserve">
-    <value>de Drop here</value>
+    <value>Hier abstellen</value>
     <comment>Text for DropHere in RowDragAndDrop popup</comment>
   </data>
   <data name="DropRowsHere" xml:space="preserve">
-    <value>de Drop {0} rows here</value>
+    <value>Legen Sie hier {0} Zeilen ab</value>
     <comment>Text for Drop mutiple rows in RowDragAndDrop popup when grid has no records</comment>
   </data>
   <data name="NotBeginsWith" xml:space="preserve">
-    <value>de Does Not Begin With</value>
+    <value>Beginnt nicht mit</value>
     <comment>Text for NotBeginsWith</comment>
   </data>
   <data name="NotEndsWith" xml:space="preserve">
-    <value>de Does Not End With</value>
+    <value>Endet nicht mit</value>
     <comment>Text for NotEndsWith</comment>
   </data>
 </root>

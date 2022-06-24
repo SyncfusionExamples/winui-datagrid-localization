@@ -1,7 +1,9 @@
 ﻿using Microsoft.UI.Xaml.Data;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Localization
 {
-    public class OrderInfo : INotifyPropertyChanged
+    public class OrderInfo : INotifyPropertyChanged, INotifyDataErrorInfo
     {
         int orderID;
         string customerId;
@@ -93,11 +95,42 @@ namespace Localization
             }
         }
 
+        private List<string> errors = new List<string>();
+
+        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
+
+        private void NotifyErrorsChanged(string propertyName)
+        {
+            if (ErrorsChanged != null)
+                ErrorsChanged(this, new DataErrorsChangedEventArgs(propertyName));
+        }
+
+        public bool HasErrors
+        {
+            // get { return !emailRegex.IsMatch(this.EMail); }
+            get
+            {
+                if (this.OrderID == 1003 || this.OrderID == 1004)
+                    return true;
+                return false;
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged(string PropertyName)
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(PropertyName));
+        }
+
+        IEnumerable INotifyDataErrorInfo.GetErrors(string propertyName)
+        {
+            if (!propertyName.Equals("OrderID"))
+                return null;
+
+            if (this.OrderID == 1003 || this.OrderID == 1004)
+                errors.Add("Delivery not available for " + this.OrderID);
+            return errors;
         }
     }
 }
