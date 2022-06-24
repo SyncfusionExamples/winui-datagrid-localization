@@ -8,12 +8,12 @@
 
   <Identity
     Name="5f5343e1-8302-49d3-a67e-f3f204d51469"
-    Publisher="CN=SathiyathanamJeyakum"
+    Publisher="CN=TempKaruna"
     Version="1.0.0.0" />
 
   <Properties>
     <DisplayName>Localization</DisplayName>
-    <PublisherDisplayName>SathiyathanamJeyakum</PublisherDisplayName>
+    <PublisherDisplayName>TempKaruna</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
