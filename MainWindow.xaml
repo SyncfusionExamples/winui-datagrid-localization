@@ -5,7 +5,7 @@
     xmlns:local="using:Localization"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-  xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
+    xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
     xmlns:grids="using:Syncfusion.UI.Xaml.Grids"
     xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
     mc:Ignorable="d">
@@ -35,8 +35,8 @@
                          ItemsSource="{Binding Orders}">
             <dataGrid:SfDataGrid.Columns>
                 <dataGrid:GridTextColumn HeaderText="Auftragsnummer" MappingName="OrderID" />
-                <dataGrid:GridTextColumn HeaderText="Kundennummer" MappingName="CustomerID" IsCaseSensitiveFilterRow="True" ImmediateUpdateColumnFilter="True" />
-                <dataGrid:GridTextColumn HeaderText="Kundenname" MappingName="CustomerName" FilterRowCondition="BeginsWith" FilterRowOptionsVisibility="Collapsed" />
+                <dataGrid:GridTextColumn HeaderText="Kundennummer" MappingName="CustomerID" ImmediateUpdateColumnFilter="True" />
+                <dataGrid:GridTextColumn HeaderText="Kundenname" MappingName="CustomerName" />
                 <dataGrid:GridTextColumn HeaderText="Land" MappingName="Country" />
                 <dataGrid:GridTextColumn HeaderText="Stückpreis" MappingName="UnitPrice" />
                 <dataGrid:GridCheckBoxColumn MappingName="IsDelivered" HeaderText="Wird geliefert" />
