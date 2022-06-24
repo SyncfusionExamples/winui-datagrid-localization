@@ -19,7 +19,6 @@ namespace Localization
         string customerName;
         double? unitPrice;
         bool isDelivered;
-        private ObservableCollection<ProductInfo> productDetails;
 
         [Display(Name = "Order ID")]
         public int OrderID
@@ -87,14 +86,6 @@ namespace Localization
             }
         }
 
-        public ObservableCollection<ProductInfo> ProductDetails
-        {
-            get { return productDetails; }
-            set { productDetails = value;
-                OnPropertyChanged("ProductDetails");
-            }
-        }
-
         private List<string> errors = new List<string>();
 
         public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
@@ -107,7 +98,6 @@ namespace Localization
 
         public bool HasErrors
         {
-            // get { return !emailRegex.IsMatch(this.EMail); }
             get
             {
                 if (this.OrderID == 1003 || this.OrderID == 1004)

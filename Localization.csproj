@@ -12,6 +12,11 @@
     <UseWinUI>true</UseWinUI>
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Model\ProductInfo.cs" />
+    <Compile Remove="Model\SalesInfo.cs" />
+    <Compile Remove="Model\SupplierInfo.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />

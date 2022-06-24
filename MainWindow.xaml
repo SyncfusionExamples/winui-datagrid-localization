@@ -17,6 +17,9 @@
         <Grid.DataContext>
             <local:ViewModel/>
         </Grid.DataContext>
+        <Grid.Resources>
+            <local:ViewModel x:Key="viewModel"/>
+        </Grid.Resources>
 
         <dataGrid:SfDataGrid x:Name="datagrid" 
                          AutoGenerateColumns="False"
@@ -34,11 +37,11 @@
                          SelectionMode="Single"
                          ItemsSource="{Binding Orders}">
             <dataGrid:SfDataGrid.Columns>
-                <dataGrid:GridTextColumn HeaderText="Auftragsnummer" MappingName="OrderID" />
+                <dataGrid:GridNumericColumn HeaderText="Auftragsnummer" MappingName="OrderID" />
                 <dataGrid:GridTextColumn HeaderText="Kundennummer" MappingName="CustomerID" ImmediateUpdateColumnFilter="True" />
                 <dataGrid:GridTextColumn HeaderText="Kundenname" MappingName="CustomerName" />
                 <dataGrid:GridTextColumn HeaderText="Land" MappingName="Country" />
-                <dataGrid:GridTextColumn HeaderText="Stückpreis" MappingName="UnitPrice" />
+                <dataGrid:GridNumericColumn HeaderText="Stückpreis" MappingName="UnitPrice" NumberFormatter="{Binding SystemCurrency,Source={StaticResource viewModel}}"/>
                 <dataGrid:GridCheckBoxColumn MappingName="IsDelivered" HeaderText="Wird geliefert" />
             </dataGrid:SfDataGrid.Columns>
 

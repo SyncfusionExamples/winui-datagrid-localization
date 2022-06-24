@@ -21,16 +21,9 @@ namespace Localization
             get { return _orders; }
             set { _orders = value; }
         }
-        private ObservableCollection<OrderInfo> _orders1;
-        public ObservableCollection<OrderInfo> Orders1
-        {
-            get { return _orders1; }
-            set { _orders1 = value; }
-        }
         public ViewModel()
         {
             _orders = new ObservableCollection<OrderInfo>();
-            _orders1 = new ObservableCollection<OrderInfo>();
             this.GenerateOrders();
         }
 
@@ -68,44 +61,6 @@ namespace Localization
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(PropertyName));
-        }
-    }
-
-    public class TableSummaryRowConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, string language)
-        {
-
-            var data = value != null ? value as SummaryRecordEntry : null;
-            if (data != null)
-            {
-                SfDataGrid dataGrid = (SfDataGrid)parameter;
-                var unitPrice = SummaryCreator.GetSummaryDisplayText(data, "UnitPrice", dataGrid.View);
-                var count = SummaryCreator.GetSummaryDisplayText(data, "OrderID", dataGrid.View);
-
-                return "Total Price : " + unitPrice.ToString() + " for " + count.ToString() + " Products ";
-            }
-
-            return null;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, string language)
-        {
-            throw new NotImplementedException();
-        }
-    }
-    public class UnitpriceConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, string language)
-        {
-            //var unitprice = (int)value;
-
-            return value;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, string language)
-        {
-            throw new NotImplementedException();
         }
     }
 
