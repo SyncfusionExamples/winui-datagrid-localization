@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Localization
+namespace LocalizationDemo
 {
     public class OrderInfo : INotifyPropertyChanged, INotifyDataErrorInfo
     {

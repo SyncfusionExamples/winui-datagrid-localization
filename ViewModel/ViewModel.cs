@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Globalization.NumberFormatting;
 
-namespace Localization
+namespace LocalizationDemo
 {
     public class ViewModel : INotifyPropertyChanged
     {

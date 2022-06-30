@@ -3,19 +3,19 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
-    <RootNamespace>Localization</RootNamespace>
+    <RootNamespace>LocalizationDemo</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-	 <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-	 <Platforms>x86;x64;arm64</Platforms>
+    <Platforms>x86;x64;arm64</Platforms>
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Model\ProductInfo.cs" />
-    <Compile Remove="Model\SalesInfo.cs" />
-    <Compile Remove="Model\SupplierInfo.cs" />
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Resources\**" />
+    <Page Remove="Resources\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,5 +40,11 @@
        package has not yet been restored -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnablePreviewMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Remove="Resources\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Remove="Resources\de\Syncfusion.Grid.WinUI.resw" />
   </ItemGroup>
 </Project>
