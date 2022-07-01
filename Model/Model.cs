@@ -1,15 +1,17 @@
 ﻿using Microsoft.UI.Xaml.Data;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Localization
+namespace LocalizationDemo
 {
-    public class OrderInfo : INotifyPropertyChanged
+    public class OrderInfo : INotifyPropertyChanged, INotifyDataErrorInfo
     {
         int orderID;
         string customerId;
@@ -17,7 +19,6 @@ namespace Localization
         string customerName;
         double? unitPrice;
         bool isDelivered;
-        private ObservableCollection<ProductInfo> productDetails;
 
         [Display(Name = "Order ID")]
         public int OrderID
@@ -85,11 +86,23 @@ namespace Localization
             }
         }
 
-        public ObservableCollection<ProductInfo> ProductDetails
+        private List<string> errors = new List<string>();
+
+        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
+
+        private void NotifyErrorsChanged(string propertyName)
         {
-            get { return productDetails; }
-            set { productDetails = value;
-                OnPropertyChanged("ProductDetails");
+            if (ErrorsChanged != null)
+                ErrorsChanged(this, new DataErrorsChangedEventArgs(propertyName));
+        }
+
+        public bool HasErrors
+        {
+            get
+            {
+                if (this.OrderID == 1003 || this.OrderID == 1004)
+                    return true;
+                return false;
             }
         }
 
@@ -98,6 +111,16 @@ namespace Localization
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(PropertyName));
+        }
+
+        IEnumerable INotifyDataErrorInfo.GetErrors(string propertyName)
+        {
+            if (!propertyName.Equals("OrderID"))
+                return null;
+
+            if (this.OrderID == 1003 || this.OrderID == 1004)
+                errors.Add("Delivery not available for " + this.OrderID);
+            return errors;
         }
     }
 }
